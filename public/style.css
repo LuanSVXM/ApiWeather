@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.containertitulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.containertitulo>span {
+    font-size: 24px;
+    font-family: Verdana;
+    letter-spacing: 1px;
+}
+
+.containerpesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container {
+    flex: 1;
+    background-color: #01b9ff;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerimg {
+    width: 100%;
+    height: 30%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.containerimg>div {
+    height: 220px;
+    width: 220px;
+    background-color: aliceblue;
+    border-radius: 110px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.containerimg>div>img {
+    max-height: 200px;
+    border-radius: 100px;
+    object-fit: contain;
+}
+
+.containerpesquisa {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerpesquisa>form {
+    width: 56%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerpesquisa>form>input {
+    width: 60%;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 5px;
+    border: none !important
+}
+
+.containerpesquisa>form>input:focus-visible {
+    border: none !important;
+    outline: none !important;
+}
+
+.containerpesquisa>form>input:focus {
+    border: none !important
+}
+
+.containerpesquisa>form>div {
+    width: 14%;
+    cursor: pointer;
+    height: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1082f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerpesquisa>form>div:active {
+    opacity: 0.7;
+}
