@@ -42,6 +42,34 @@ body {
     align-items: center;
 }
 
+.containerimg2 {
+    padding-top: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.containerimg2>div {
+    height: 220px;
+    width: 220px;
+    background-color: aliceblue;
+    border-radius: 110px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.containerimg2>div>img {
+    max-height: 200px;
+    border-radius: 100px;
+    object-fit: contain;
+}
+
+
 .containerimg>div {
     height: 220px;
     width: 220px;
@@ -106,3 +134,50 @@ body {
 .containerpesquisa>form>div:active {
     opacity: 0.7;
 }
+
+
+.containertitulo > span {
+
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+
+}
+
+
+.container_temps {
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.container_temps > div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+    align-content: space-between;
+    border-radius: 3px;
+    background-color: #5bc5ef;
+    height: 150px;
+    width: 120px;
+}
+
+.container_temps > div > img {
+    object-fit: contain;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+
+.container_temps > div > :last-child {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+} 

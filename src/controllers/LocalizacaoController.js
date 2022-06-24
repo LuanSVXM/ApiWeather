@@ -11,20 +11,25 @@
 
      async transformarcep(req, res) {
          const { pesquisa } = req.body
-
-         if (pesquisa == null || pesquisa.length != 8) {
+         const pesquisasempontos =  Util.apenasNumeros(pesquisa)
+         console.log(pesquisasempontos)
+         if (pesquisasempontos == null || pesquisasempontos.length != 8) {
              res.redirect('index.html')
          }
-
-         const cep = await Util.getCep(pesquisa)
+         const cep = await Util.getCep(pesquisasempontos)
 
          if (!cep) {
              res.redirect('index.html')
          }
 
-         console.log(cep)
+         let tempo = await Util.getTempo(cep)
+         console.log(tempo)
+         if (!tempo) {
+            res.redirect('index.html')
+        }
+      
 
-         res.render('home')
+         res.render('home', {cep: cep, tempo: tempo.main})
 
      }
 
