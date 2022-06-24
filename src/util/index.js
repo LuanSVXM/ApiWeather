@@ -23,7 +23,7 @@ class Util {
 
 
         var numeros = string.replace(/[^0-9]/g, '');
-        return numeros;
+        return numeros.trim();
 
     }
 
